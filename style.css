@@ -48,9 +48,31 @@ html {
     position: absolute;
     top: 1.7rem;
     right: 3rem;
+    animation: searchIconAnim 1s forwards;
 }
 
 .search-icon i{
     color: #999;
     cursor: pointer;
+}
+
+@keyframes searchIconAnim{
+    0%{
+        top: 1.7rem;
+    }
+
+    40%{
+        top: 40%;
+        right: calc(50% + 16rem);
+    }
+
+    60%{
+        top: 40%;
+        right: calc(50% + 16rem);
+    }
+
+    100%{
+        top: 1.7rem;
+        right: calc(50% + 16rem);
+    }
 }

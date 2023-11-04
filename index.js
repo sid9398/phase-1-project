@@ -6,3 +6,7 @@ function fetchData() {
     .then((data) => console.log(data))
 }
 
+const searchIcon = document.querySelector(".search-icon i")
+searchIcon.addEventListener('click', () => {
+    searchIcon.parentElement.classList.add("change")
+})
