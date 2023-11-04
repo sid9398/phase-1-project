@@ -19,6 +19,12 @@ html {
     visibility: hidden;
 }
 
+.search-input-wrapper.change{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s 1s;
+}
+
 .search-input {
     width: 30rem;
     display: flex;
@@ -48,6 +54,9 @@ html {
     position: absolute;
     top: 1.7rem;
     right: 3rem;
+}
+
+.search-icon.change{
     animation: searchIconAnim 1s forwards;
 }
 
