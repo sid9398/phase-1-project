@@ -6,22 +6,22 @@ function fetchData() {
     .then((data) => console.log(data))
 }
 
-const searchInputWrapper = document.querySelector(".search-input-wrapper")
-const searchInput = document.querySelector(".search-input input")
-const searchIcon = document.querySelector(".search-icon i")
-const closeIcon = document.querySelector(".search-input i")
+// get elements by their ID
+const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
 
-searchIcon.addEventListener('click', () => {
-    searchIcon.parentElement.classList.add("change")
-    searchInputWrapper.classList.add("change")
+// add event listener to the button
+searchButton.addEventListener('click', function() {
+  // get the search input value
+  const searchTerm = searchInput.value;
+  // do something with the search term (e.g. redirect to a search results page)
+  console.log(`Searching for "${searchTerm}"...`);
+});
 
-    setTimeout(() => {
-        searchInput.focus()
-    }, 1000)
-})
-
-closeIcon.addEventListener('click', () => {
-    searchIcon.parentElement.classList.remove("change")
-    searchInputWrapper.classList.remove("change")
-})
-
+// add event listener to the input (if you want to trigger the search on Enter keypress)
+searchInput.addEventListener('keyup', function(event) {
+  if (event.key === 'Enter') {
+    // simulate a button click to trigger the search
+    searchButton.click();
+  }
+});
