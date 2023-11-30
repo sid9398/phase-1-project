@@ -25,3 +25,4 @@ searchInput.addEventListener('keyup', function(event) {
     searchButton.click();
   }
 });
+
