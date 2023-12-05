@@ -1,8 +1,11 @@
-function fetchData() {
-    fetch('https://api.tvmaze.com/shows')
-    .then((resp) => resp.json())
-    .then((json) => console.log(json))
-}
+const showsURL = 'https://api.tvmaze.com/shows'
+const showGenreEl = document.getElementById('show-genres')
 
-document.addEventListener("DOMContentLoaded", () => fetchData())
+fetch(showsURL)
+    .then(response => response.json())
+    .then(responseJson => {
+        for (let {genres} of responseJson){
+            console.log(genres)
+        }
+    })
 
