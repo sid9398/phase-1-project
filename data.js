@@ -1,7 +1,7 @@
 // 20231204195443
 // https://api.tvmaze.com/shows
 
-[
+const tvShows = [
     {
       "id": 1,
       "url": "https://www.tvmaze.com/shows/1/under-the-dome",
