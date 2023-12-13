@@ -1,11 +1,12 @@
 const showsURL = 'https://api.tvmaze.com/shows'
-const searchInput = document.getElementById('searchInput');
+const searchInput = document.getElementById('searchInput')
+const genreButton = document.getElementById('genres')
 
 fetch(showsURL)
     .then(response => response.json())
     .then(data => console.log(data))
 
-// add event listener to the button
+// add event listener to the input
 searchInput.addEventListener('input', function() {
   // get the search input value
   const searchTerm = this.value
@@ -19,6 +20,9 @@ searchInput.addEventListener('input', function() {
     resultItem.textContent = item.name
     resultsList.appendChild(resultItem)
   })
+  })
+
+  genreButton.addEventListener('click', function() {
     
   })
 
