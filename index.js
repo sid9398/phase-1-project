@@ -1,6 +1,7 @@
 const showsURL = 'https://api.tvmaze.com/shows'
 const searchInput = document.getElementById('searchInput')
 const genreButton = document.getElementById('genres')
+const darkModeButton = document.getElementById('darkmode')
 
 fetch(showsURL)
     .then(response => response.json())
@@ -32,6 +33,8 @@ searchInput.addEventListener('input', function() {
         differentResults.appendChild(diffResultItem)
     })
 })
+
+
 
 
 
