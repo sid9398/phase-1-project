@@ -23,8 +23,10 @@ searchInput.addEventListener('input', function() {
   })
 
   genreButton.addEventListener('click', function() {
+    const differentFilter = tvShows.filter(item => item.genres)
     
-  })
+    })
+  
 
 
 
