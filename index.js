@@ -26,6 +26,7 @@ searchInput.addEventListener('input', function() {
     const differentFilter = tvShows.filter(item => item.genres)
     const differentResults = document.getElementById("genreList")
     differentResults.innerHTML = " "
+    differentFilter.forEach(item => {
     })
   
 
