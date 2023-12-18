@@ -27,6 +27,7 @@ searchInput.addEventListener('input', function() {
     const differentResults = document.getElementById("genreList")
     differentResults.innerHTML = " "
     differentFilter.forEach(item => {
+        const diffResultItem = document.createElement("ul")
     })
   
 
