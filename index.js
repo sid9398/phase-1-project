@@ -34,7 +34,10 @@ searchInput.addEventListener('input', function() {
     })
 })
 
-
+darkModeButton.addEventListener('click', function() {
+    const element = document.body
+    element.classList.toggle("dark-mode")
+})
 
 
 
